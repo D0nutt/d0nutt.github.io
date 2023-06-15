@@ -1,0 +1,302 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+body {
+    background-color: rgb(30, 30, 30);
+    margin: 0;
+}
+
+/* Header Styles */
+
+.header-area {
+    background-image: url(images/night_sky.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    position: fixed;
+}
+
+.header-area:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: rgb(20, 20, 20);
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.name {
+    color: white;
+    font-size: 6em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.contact-info {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Content Styles */
+
+.content-area {
+width: 100%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    padding-bottom: 10%;
+    background-color: #1d1429;
+}
+
+.section-title {
+    color: white;
+    font-style: italic;
+    font-size: 4em;
+    padding-top: 1em;
+    padding-left: 1em;
+    word-wrap: break-word;
+}
+
+/* Education Styles */
+
+.education-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.education-card {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 2%;
+}
+
+#asso-degree {
+    background-image: url(images/beaker.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#bach-degree {
+    background-image: url(images/coding.png);
+    background-position: 50% 75%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#mast-degree {
+    background-image: url(images/flyingV.jpg);
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+}
+
+#doct-degree {
+    background-image: url(images/tardis.jpg);
+    background-position: 50% 75%;
+    background-size: 45%;
+    background-repeat: no-repeat;
+}
+
+.edu-card-title {
+    font-size: 2em;
+    padding-left: 1em;
+    margin: 0;
+    padding-top: 1em;
+}
+
+.edu-card-sub-title {
+    font-style: italic;
+    padding-left: 1.75em;
+    color: gray;
+    margin: 0;
+}
+
+/* Experience Styles */
+
+.experience-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.experience-card {
+    width: 350px;
+    height: 350px;
+    background: conic-gradient(#251b33 0deg 90deg, 
+    white 90deg 270deg, #251b33 270deg 360deg);
+    border-radius: 2%;
+}
+
+.exp-card-title {
+    color: white;
+    font-size: 1em;
+    padding-left: 1em;
+    margin: 0;
+}
+
+.exp-card-sub-title {
+    font-style: italic;
+    padding-left: 0.90em;
+    padding-top: 0.5em;
+    color: white;
+    margin: 0;
+}
+
+.exp-card-text {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: 2em;
+    color: black;
+    margin: 0;
+}
+
+#usu-job {
+    background-image: url(images/usu.png);
+    background-position: center;
+    width: 100%;
+    height: 100px;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+}
+
+#beech-job {
+    background-image: url(images/beechtree.png);
+    background-position: center;
+    width: 100%;
+    height: 100px;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+}
+
+#subway-job {
+    background-image: url(images/subway.jpg);
+    background-position: center;
+    width: 100%;
+    height: 100px;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+}
+
+#sea-job {
+    background-image: url(images/seaworld.png);
+    background-position: center;
+    width: 100%;
+    height: 100px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+}
+
+#uber-job {
+    background-image: url(images/ubereats.png);
+    background-position: center;
+    width: 100%;
+    height: 100px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+}
+
+#twitch-job {
+    background-image: url(images/twitch.jpg);
+    background-position: center;
+    width: 100%;
+    height: 100px;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+}
+
+/* Language Styles */
+
+.language-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.language-circle {
+    width: 225px;
+    height: 225px;
+    background: white;
+    border-radius: 50%;
+}
+
+#python-img {
+    background-image: url(images/python.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+#java-img {
+    background-image: url(images/java.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#javascript-img {
+    background-image: url(images/javascript.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#css-img {
+    background-image: url(images/css.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#c-plus-img {
+    background-image: url(images/cplus.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+#c-sharp-img {
+    background-image: url(images/csharp.png);
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+#sql-img {
+    background-image: url(images/sql.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+#rust-img {
+    background-image: url(images/rust.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+#perl-img {
+    background-image: url(images/perl.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
