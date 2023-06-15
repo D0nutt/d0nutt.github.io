@@ -1,2 +1,2 @@
 # d0nutt.github.io
-Resume
+Resume d0nutt.github.io/resume.html
