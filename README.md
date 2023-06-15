@@ -1,2 +1,2 @@
 # d0nutt.github.io
-Resume Here: d0nutt.github.io/resume.html
+My Resume: [Click Here!](d0nutt.github.io/resume)
