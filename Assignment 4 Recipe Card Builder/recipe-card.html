@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <script src="recipe.js" defer></script>
+    <script src="writeRecipeToFile.js" defer></script>
+    <link rel="stylesheet" href="recipe-styles.css">
+    <title>Recipe Card Builder</title>
+  </head>
+  <body>
+    <header>
+      <h1>America's Finest Recipe Builder</h1>
+    </header>
+    <main>
+      <section>
+        <div class="recipe-title">
+          <input id="recipe-name" type="text" placeholder="Recipe title" aria-label="Recipe Title" aria-description="Type the name of the recipe here"/>
+        </div>
+      </section>
+      <section>
+        <div class="recipe-ingredients">
+          <input id="ingredient" type="text" placeholder="Ingredient name" aria-label="Ingredient Name" aria-description="Press enter or click the ADD button to add ingredient"/>
+          <button id="ingredient-button" aria-label="Add ingredient button" aria-description="This will add the typed in ingredient">ADD</button>
+        </div>
+        <div id="ingredients-container" >
+          <p id="ing-placeholder" >Ingredients will appear here</p>
+        </div>
+      </section>
+      <section>
+        <div class="recipe-instructions">
+          <input id="instruction" type="text" placeholder="Instruction" aria-label="Instruction" aria-description="Press enter or click the ADD button to add instruction"/>
+          <button id="instruction-button" aria-label="Add instruction button" aria-description="This will add the typed in instruction">ADD</button>
+        </div>
+        <div id="instructions-container" >
+          <p id="ins-placeholder" >Instructions will appear here</p>
+        </div>
+      </section>
+      <section>
+        <div class="reset-save-buttons">
+          <button id="reset-button" aria-label="Reset button" aria-description="This will remove all added ingredients and instructions aswell as clear all text fields">RESET</button>
+          <button id="save-button" aria-label="Save to file button" aria-description="This will save added ingredients and instructions aswell as the recipe name in a card format to a downloaded file">SAVE TO FILE</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="error-message" aria-live="assertive"></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(18, 18, 18);
+}
+
+h1 {
+    color: #94C759;
+    text-align: center;
+    padding: .5em;
+    font-size: 3em;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+.recipe-title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.recipe-title > input {
+    border-radius: 30px;
+    width: 24em;
+    height: 1.5em;
+    font-size: 2em;
+    padding-left: 1em;
+    border: 10px groove #94C759;
+    
+}
+
+.recipe-title > input::placeholder {
+    font-style: italic;
+    opacity: 0.75;
+}
+
+.recipe-ingredients {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-ingredients > input {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 20em;
+    height: 1.5em;
+    font-size: 2em;
+    padding-left: 1em;
+    border-top: 10px groove #94C759;
+    border-left: 10px groove #94C759;
+    border-bottom: 10px groove #94C759;
+    border-right: none;
+}
+
+.recipe-ingredients > input::placeholder {
+    font-style: italic;
+    opacity: 0.75;
+}
+
+.recipe-ingredients > button {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: 10px groove #94C759;
+    border-right: 10px groove #94C759;
+    border-bottom: 10px groove #94C759;
+    border-left: 2px solid lightgray;
+    width: 6.5em;
+    font-size: 1.25em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.recipe-ingredients > button:hover {
+    background-color: #94C759;
+    transition-duration: 0.4s;
+}
+
+#ingredients-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 0.5em;
+    row-gap: 1em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 25px;
+    border: 5px dotted white;
+    width: 46em;
+    min-height: 10em;
+}
+
+#ing-placeholder {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#ingredients-container > div {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 30px;
+    border: 5px solid #94C759;
+    padding: 0.5em;
+    margin: 0%;
+    cursor: pointer;
+}
+
+.recipe-instructions {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-instructions > input {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 20em;
+    height: 1.5em;
+    font-size: 2em;
+    padding-left: 1em;
+    border-top: 10px groove #94C759;
+    border-left: 10px groove #94C759;
+    border-bottom: 10px groove #94C759;
+    border-right: none;
+}
+
+.recipe-instructions > input::placeholder {
+    font-style: italic;
+    opacity: 0.75;
+}
+
+.recipe-instructions > button {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: 10px groove #94C759;
+    border-right: 10px groove #94C759;
+    border-bottom: 10px groove #94C759;
+    border-left: 2px solid lightgray;
+    width: 6.5em;
+    font-size: 1.25em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.recipe-instructions > button:hover {
+    background-color: #94C759;
+    transition-duration: 0.4s;
+}
+
+#instructions-container {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0.5em;
+    row-gap: 1em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 25px;
+    border: 5px dotted white;
+    width: 46em;
+    min-height: 10em;
+}
+
+#ins-placeholder {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#instructions-container > div {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 5px solid #94C759;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.reset-save-buttons {
+    display: flex;
+    margin: none;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 29em;
+}
+
+.reset-save-buttons > button {
+    border-radius: 30px;
+    border: 10px ridge #94C759;
+    width: 10em;
+    height: 3em;
+    font-size: 1.25em;
+    font-weight: bold;
+    cursor: pointer;
+    margin: none;
+}
+
+.reset-save-buttons > #reset-button {
+    width: 7em;
+}
+
+.reset-save-buttons > #reset-button:hover {
+    background-color: lightcoral;
+    transition-duration: 0.4s;
+}
+
+.reset-save-buttons > button:hover {
+    background-color: #94C759;
+    transition-duration: 0.4s;
+}
+
+#error-message {
+    position: fixed;
+    padding: 1em;
+    font-size: 2em;
+    height: 2em;
+    background-color: lightcoral;
+    color: white;
+    font-weight: bold;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    transform: translateY(200px);
+}
+
+#error-message[data-open="true"] {
+    transform: translateY(0px);
+}
