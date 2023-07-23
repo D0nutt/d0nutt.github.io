@@ -1,0 +1,22 @@
+.navigation-drawer {
+    top: 64px;
+    left: -300px;
+    width: 300px;
+    bottom: 0px;
+    background-color: #ad2831;
+    transition: all .3s ease;
+    position: absolute;
+}
+
+.navigation-drawer[data-open="true"] {
+    left: 0px;
+}
+
+.navigation-drawer > a {
+    display: flex;
+    flex-direction: column;
+    padding-left: 22px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    cursor: pointer;
+}

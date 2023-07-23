@@ -1,0 +1,93 @@
+/* Css for the normal button. */
+
+.normal-button{
+    background-color: #ad2831;
+    width: fit-content;
+    height: 75px;
+    font-weight: bold;
+    margin: 0%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all .3s ease;
+}
+
+.normal-button:hover {
+    background-color: #640d14;
+}
+
+.normal-button[data-pressed="true"] {
+    box-shadow: none;
+}
+
+/* Css for the icon button. */
+
+.icon-button {
+    background-color: #ad2831;
+    width: fit-content;
+    height: 75px;
+    font-weight: bold;
+    margin: 0%;
+    padding: 16px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all .3s ease;
+}
+
+.icon-button > span {
+    font-size: 50px;
+    pointer-events: none;
+}
+
+.icon-button:hover {
+    background-color: #640d14;
+}
+
+.icon-button[data-pressed="true"] {
+    box-shadow: none;
+}
+
+/* Css for the floating icon button. */
+
+.floating-icon-button {
+    background-color: #ad2831;
+    width: fit-content;
+    height: 75px;
+    font-weight: bold;
+    margin: 0%;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all .3s ease;
+}
+
+.floating-icon-button > span {
+    font-size: 50px;
+    pointer-events: none;
+}
+
+.floating-icon-button:hover {
+    background-color: #640d14;
+}
+
+.floating-icon-button[data-pressed="true"] {
+    box-shadow: none;
+}

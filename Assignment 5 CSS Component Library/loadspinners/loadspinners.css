@@ -1,0 +1,77 @@
+/* First spinner. */
+
+.loader1 {    
+    width: 100px;
+    height: 100px;
+    margin: 0%;
+    padding: 0%;
+    border: 20px solid white;
+    border-radius: 50%;
+    border-top: 20px solid #ad2831;
+    animation: loader1 4s linear infinite;
+}
+
+@keyframes loader1 {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+}
+
+/* Second spinner. */
+
+.loader2 {
+    width: 100px;
+    height: 100px;
+    margin: 0%;
+    padding: 0%;
+    border-radius: 50%;
+    border: 20px solid white;
+    border-color: #ad2831 transparent white transparent;
+    animation: loader2 2s linear infinite;
+}
+
+@keyframes loader2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+/* Third spinner. */
+
+.loader3 {
+    height: fit-content;
+    width: fit-content;
+    margin: 0%;
+    padding: 0%;
+}
+
+.loader3 > h1 {
+    margin: 0%;
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, white, #ad2831, white);
+    background-size: 80%;    
+    background-repeat: no-repeat;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}

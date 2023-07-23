@@ -1,0 +1,9 @@
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+  
+.carousel-slides > img {
+    width: fit-content;
+    height: 500px;
+}
