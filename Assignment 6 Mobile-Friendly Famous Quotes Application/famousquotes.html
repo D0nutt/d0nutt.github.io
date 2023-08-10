@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Famous Quotes</title>
+    <link rel="stylesheet" href="famousquotes.css">	
+    <script src="famousquotes.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main class="main-section" id="main-section">
+        <div class="title">
+          <h1 class="quote-title">Quote Search</h1>
+        </div>
+        <div class="search">
+          <label .class="label">
+            <input type="text" id="search-bar" placeholder="Abraham Lincoln" aria-label="Search Bar" aria-description="Type the name of an author here.">
+          </label>
+        </div>
+        <div class="quotes-container" id="quotes">
+          <div class="main-quote" id="random-quote"></div>
+          <div class="main-quote" id="random-author"></div>
+        </div>
+    </main>
+    <footer>
+      <div id="error-message" aria-live="assertive"></div>
+    </footer>
+  </body>
+</html>
